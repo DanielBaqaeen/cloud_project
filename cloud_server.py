@@ -31,7 +31,7 @@ while True:
 
     if data["Data"] is None and not os.path.exists(newpath):
       os.mkdir(newpath)
-      success_mes = 'Successfully created account, no data updated'
+      success_mes = 'Successfully created an account, no data updated'
       client.send(success_mes.encode('UTF-8'))  
     
     elif data["Data"] is None and os.path.exists(newpath):
